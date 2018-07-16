@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parrent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_cell"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_sub_parrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_month_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="22dp"
+            android:textSize="16dp"
+            android:text="01"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_gravity="left|bottom">
+
+            <TextView
+                android:id="@+id/tvGps"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="1"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_gps"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tvGpsok"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="1"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_gpsok"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tvGpserror"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="1"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_gpserror"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

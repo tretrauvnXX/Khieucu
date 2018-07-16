@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customer_row_selector"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp">
+
+    <LinearLayout
+        android:id="@+id/rowName_vn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ivCheckgps"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/todo_gps"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/tvName_vn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên công việc"
+            android:textColor="#111111"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowTen_nhanvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowName_vn"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/todo_user"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/tvTen_nhanvien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên nhân viên"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowTen_nhanvien"
+        tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/todo_pin"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/tvDiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ kế hoạch"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rowAddress"
+        tools:ignore="DisableBaselineAlignment">
+        <LinearLayout
+            android:id="@+id/rowTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight,RtlHardcoded,UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/todo_time"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#984dff"
+                android:layout_below="@id/rowTime"
+                android:text="Thời gian"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tvComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888"
+                android:text="0"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription=""
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/todo_comment"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:visibility="gone"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvNhanvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhân viên"
+        android:visibility="gone"
+        tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvTime_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datetime"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTime_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datetime"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:visibility="gone"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvGhichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCheckgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvNghiphep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvRealgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

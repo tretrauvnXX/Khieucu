@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Lịch SHA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Lịch làm việc</string>
+    <string name="nav_notifications">Sự kiện</string>
+    <string name="nav_customers">Hệ thống đại lý</string>
+
+    <string name="menu_action_logout">Đăng xuất</string>
+    <string name="hint_username">Tên đăng nhập</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="btn_login">ĐĂNG NHẬP</string>
+
+
+    <string name="phone">Điện thoại</string>
+    <string name="fullname">Tên khách hàng</string>
+    <string name="address">Địa chỉ</string>
+    <string name="save">Lưu</string>
+
+    <string name="google_android_map_api_key">AIzaSyBD-w1U6NKv3tk8yOZPTKX9S76bVNok3JQ</string>
+    <string name="list">Danh sách</string>
+    <string name="add">Thêm mới</string>
+    <string name="custome_type">Loại khách</string>
+    <string name="id">ID</string>
+    <string name="longitude">Longitude</string>
+    <string name="name_vn">Tên công việc</string>
+    <string name="select">Chọn</string>
+    <string name="close">Đóng</string>
+    <string name="datetime">Thời gian</string>
+    <string name="comment">Bình luận</string>
+    <string name="note">Ghi chú</string>
+    <string name="noteNghiphep">Đánh dấu là nghỉ phép (Không kiểm tra vị trí)</string>
+    <string name="nav_branchs">Hệ thống chi nhánh</string>
+    <string name="check_location">Kiểm tra vị trí</string>
+</resources>

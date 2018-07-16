@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_event_note"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@mipmap/ic_notification"
+            android:title="@string/nav_notifications" />
+
+        <item
+            android:id="@+id/nav_branchs"
+            android:icon="@mipmap/ic_branch"
+            android:title="@string/nav_branchs"/>
+
+        <item
+            android:id="@+id/nav_customers"
+            android:icon="@mipmap/ic_card_membership"
+            android:title="@string/nav_customers"/>
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@mipmap/ic_location"
+            android:title="@string/check_location"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_other"
+        android:title="Other"
+        tools:ignore="HardcodedText">
+        <menu>
+
+        </menu>
+    </item>
+
+</menu>

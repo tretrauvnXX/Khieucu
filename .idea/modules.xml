@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LichSHA.iml" filepath="$PROJECT_DIR$/LichSHA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamiccalendar/dynamiccalendar.iml" filepath="$PROJECT_DIR$/dynamiccalendar/dynamiccalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidedatetimepicker/slidedatetimepicker.iml" filepath="$PROJECT_DIR$/slidedatetimepicker/slidedatetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeback/swipeback.iml" filepath="$PROJECT_DIR$/swipeback/swipeback.iml" />
+    </modules>
+  </component>
+</project>
